@@ -1,0 +1,6 @@
+{
+  "printWidth": 125,
+  "jsxBracketSameLinte": true,
+  "alwaysParens": "always",
+  "singleQuote": true
+}

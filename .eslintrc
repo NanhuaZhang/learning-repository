@@ -1,0 +1,70 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react"],
+  "extends": ["airbnb", "plugin:react/recommended", "plugin:react-hooks/recommended"],
+  "rules": {
+    "max-len": "off",
+    "react/require-default-props": "off",
+    "react/forbid-prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "react/sort-comp": "off",
+    "react/display-name": "off",
+    "no-mixed-operators": "off",
+    "no-plusplus": "off",
+    "no-bitwise": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-tag-spacing": "off",
+    "no-underscore-dangle": "off",
+    "prefer-destructuring": "off",
+    "arrow-parens": ["error", "always"],
+    "function-paren-newline": "off",
+    "class-methods-use-this": "off",
+    "jsx-a11y/mouse-events-have-key-events": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "func-names": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "sort-imports": "off",
+    "object-curly-newline": "off",
+    "no-trailing-spaces": "off",
+    "no-unused-vars": "off",
+    "prefer-const": "off",
+    "react/no-unused-state": "off",
+    "no-confusing-arrow": "warn",
+    "no-continue": "off",
+    "no-useless-constructor": "off",
+    "no-nested-ternary": "warn",
+    "react/jsx-boolean-value": "warn",
+    "no-param-reassign": "off",
+    "lines-between-class-members": "off",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-lonely-if": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "commonjs": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "generators": true,
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  }
+}
